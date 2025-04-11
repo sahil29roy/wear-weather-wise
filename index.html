@@ -1,26 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>wear-weather-wise</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <meta property="og:title" content="wear-weather-wise" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <title>Wear Weather Wise</title>
+    <meta name="description" content="Get clothing recommendations based on weather" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
 
   <body>
-    <div id="root"></div>
+    <div class="container">
+      <div class="background-elements">
+        <i data-lucide="sun" class="weather-icon sun-icon"></i>
+        <i data-lucide="cloud-rain" class="weather-icon rain-icon"></i>
+        <i data-lucide="cloud" class="weather-icon cloud-icon"></i>
+        <i data-lucide="cloud-snow" class="weather-icon snow-icon"></i>
+      </div>
+      
+      <h1 class="title">Wear Weather Wise</h1>
+      <p class="subtitle">
+        Get personalized clothing recommendations based on the current weather at any location.
+      </p>
+      
+      <div class="chat-container">
+        <div class="chat-messages" id="chatMessages">
+          <!-- Messages will be displayed here -->
+        </div>
+        
+        <div class="chat-input-container">
+          <input type="text" id="cityInput" placeholder="Enter a city name..." class="city-input">
+          <button id="sendButton" class="send-button">Get Recommendation</button>
+        </div>
+      </div>
+      
+      <footer class="footer">
+        <p>Enter any city or location to get clothing recommendations based on the current weather.</p>
+      </footer>
+    </div>
+    
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <script src="app.js"></script>
   </body>
 </html>
