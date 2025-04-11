@@ -1,21 +1,12 @@
 
 import { toast } from "sonner";
 
-interface WeatherData {
-  temperature: number;
-  conditions: string;
-  city: string;
-  icon: string;
-}
-
-const RAPID_API_KEY = "f8cc895708msh086d3c042a93537p191fc6jsn425c5106a533"; // Using the key from the example code
-
-export async function getWeatherForCity(city: string): Promise<WeatherData | null> {
+export async function getWeatherForCity(city) {
   const url = `https://openweather43.p.rapidapi.com/weather?q=${encodeURIComponent(city)}&units=metric`;
   const options = {
     method: 'GET',
     headers: {
-      'x-rapidapi-key': RAPID_API_KEY,
+      'x-rapidapi-key': 'f8cc895708msh086d3c042a93537p191fc6jsn425c5106a533',
       'x-rapidapi-host': 'openweather43.p.rapidapi.com'
     }
   };

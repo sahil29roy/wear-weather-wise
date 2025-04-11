@@ -1,14 +1,5 @@
 
-interface ClothingRecommendation {
-  top: string;
-  bottom: string;
-  footwear: string;
-  accessories: string[];
-  description: string;
-  icon: string;
-}
-
-export function getClothingRecommendation(temperature: number, conditions: string): ClothingRecommendation {
+export function getClothingRecommendation(temperature, conditions) {
   // Cold weather (below 10°C)
   if (temperature < 10) {
     return {
