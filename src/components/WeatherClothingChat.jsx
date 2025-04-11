@@ -1,13 +1,13 @@
 
 import { useEffect, useRef, useState } from "react";
-import { ChatInput } from "./ChatInput";
-import { ChatMessage } from "./ChatMessage";
-import { generateId } from "@/utils/helpers";
-import { getWeatherForCity } from "@/services/weatherService";
-import { getClothingRecommendation } from "@/services/clothingService";
+import { ChatInput } from "./ChatInput.jsx";
+import { ChatMessage } from "./ChatMessage.jsx";
+import { generateId } from "@/utils/helpers.js";
+import { getWeatherForCity } from "@/services/weatherService.js";
+import { getClothingRecommendation } from "@/services/clothingService.js";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { MapPin } from "lucide-react";
-import { MESSAGE_TYPES } from "@/types/chatTypes";
+import { MESSAGE_TYPES } from "@/types/chatTypes.js";
 
 export default function WeatherClothingChat() {
   const [messages, setMessages] = useState([

@@ -1,5 +1,5 @@
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils.js";
 import { Cloud, CloudRain, CloudSnow, Shirt, Sun, Thermometer } from "lucide-react";
 
 export function ChatMessage({ message }) {

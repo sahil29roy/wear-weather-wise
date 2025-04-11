@@ -1,5 +1,5 @@
 
-import WeatherClothingChat from "@/components/WeatherClothingChat";
+import WeatherClothingChat from "@/components/WeatherClothingChat.jsx";
 import { Cloud, CloudRain, CloudSnow, Sun } from "lucide-react";
 
 const Index = () => {
